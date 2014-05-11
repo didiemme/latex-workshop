@@ -1,5 +1,7 @@
 \chapter{Stato dell'arte} 
 \label{Cap2}
+
+\section{Esempio Algoritmo}
 \begin{algorithm}
 \caption{Hierarchical Procruste Matching} 
 \label{algHPM}
@@ -16,3 +18,82 @@
 \STATE shape similarity = wtd. sum of scores at each length
 \end{algorithmic}
 \end{algorithm}
+
+
+\section{Esempio Tabella}
+\begin{table}[h!]
+\caption{Statistiche sui dati Kamares}
+\centering
+\subtable[Medie Intra Classe Normalizzate\label{kamares_intra_classe}]{
+
+\centering
+\begin{tabular}{|l|l|l|l|}
+
+\hline
+
+\textbf{GPM}&\textbf{HPM}&\textbf{CF}&\textbf{CBSM}\\\hline
+
+             0.0120  &  0.0944  &  \textbf{0.0025}  &  0.0638\\\hline
+             0.1540  &  0.1830  &  \textbf{0.0131}  &  0.0521\\\hline
+    \textbf{0.0047}  &  0.0783  &  0.1120           &  0.0468\\\hline
+             0.1871  &  0.2245  &  \textbf{0.0494}  &  0.2245\\\hline
+    \textbf{0.0062}  &  0.0809  &  0.0258           &  0.0525\\\hline
+    \textbf{0.0038}  &  0.0788  &  0.1013           &  0.0602\\\hline
+    \textbf{0.0079}  &  0.1021  &  0.1085           &  0.0867\\\hline
+             0.0576  &  0.1739  &  0.0764           &  \textbf{0.0357}\\\hline
+    \textbf{0.0365}  &  0.1325  &  0.2467           &  0.0759\\\hline
+
+\end{tabular}
+
+}
+%\hspace{5mm}
+\subtable[Medie Inter Classe Normalizzate\label{kamares_inter_classe}]{
+
+\centering
+\begin{tabular}{|l|l|l|l|}
+
+\hline
+
+\textbf{GPM}&\textbf{HPM}&\textbf{CF}&\textbf{CBSM}\\\hline
+
+    0.3262  &  \textbf{0.4576}  &  0.0620  &  0.3141\\\hline
+    0.6620  &  \textbf{0.6739}  &  0.0706  &  0.2862\\\hline
+    0.3141  &  0.4226  			&  0.1592  &  \textbf{0.4998}\\\hline
+    0.4101  &  \textbf{0.5074}  &  0.1107  &  0.4230\\\hline
+    0.2641  &  \textbf{0.3994}  &  0.1275  &  0.3899\\\hline
+    0.3566  &  \textbf{0.4579}  &  0.1469  &  0.3722\\\hline
+    0.3023  &  \textbf{0.4272}  &  0.1266  &  0.3510\\\hline
+    0.5065  &  \textbf{0.6675}  &  0.1638  &  0.3053\\\hline
+    0.4253  &  \textbf{0.5189}  &  0.1512  &  0.3353\\\hline
+
+\end{tabular}
+
+}
+
+\vspace{10mm}	
+%\vspace{3mm}					
+\subtable[Varianza Intra Classe\label{kamares_intra_varianza}]{
+
+\centering
+\begin{tabular}{|l|l|l|l|}
+
+\hline
+
+\textbf{GPM}&\textbf{HPM}&\textbf{CF}&\textbf{CBSM}\\\hline
+
+   	0.0003  		 &  0.0161  &  \textbf{0.0000}  &  0.0084\\\hline
+    0.0622  		 &  0.0665  &  \textbf{0.0000}  &  \textbf{0.0058}\\\hline
+    \textbf{0.0000}  &  0.0109  &  0.0510  			&  0.0050\\\hline
+    0.0908  		 &  0.1006  &  \textbf{0.0063}  &  0.1104\\\hline
+    \textbf{0.0001}  &  0.0116  &  0.0014  			&  0.0058\\\hline
+    \textbf{0.0000}  &  0.0110  &  0.0640  			&  0.0088\\\hline
+    \textbf{0.0001}  &  0.0189  &  0.0540  			&  0.0144\\\hline
+    0.0078  		 &  0.0546  &  0.0120  			&  \textbf{0.0024}\\\hline
+    \textbf{0.0042}  &  0.0336  &  0.1211		    &  0.0129\\\hline
+
+\end{tabular}
+
+}
+%
+
+\end{table}
