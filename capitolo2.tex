@@ -1,2 +1,18 @@
 \chapter{Stato dell'arte} 
 \label{Cap2}
+\begin{algorithm}
+\caption{Hierarchical Procruste Matching} 
+\label{algHPM}
+\begin{algorithmic}[1]
+\STATE Initialize: match $X$ and $Y$ using GPM
+\FOR { segment lengths: $l$ = $50$, $25$, $12.5$ }
+\FOR { segments of $X$: $m$ = $1$, $\dots$, \# segs. at len. $l$ }
+\STATE Compute the \textsl{predicted match} of seg. $m$ based on the matches at length $l-1$
+\STATE Define neighborhood around the \textsl{predicted match}
+\STATE Compute PD between seg. $m$ and each neighborhood seg. of $Y$
+\ENDFOR
+\STATE Select matches and get total score for len. $l$ based on PD between segs. and candidate matches
+\ENDFOR
+\STATE shape similarity = wtd. sum of scores at each length
+\end{algorithmic}
+\end{algorithm}
